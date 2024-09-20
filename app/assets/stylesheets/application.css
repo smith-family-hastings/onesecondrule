@@ -155,3 +155,10 @@
 .footer, .push {
     height: 75px; /* .push must be the same height as .footer */
 }
+
+/* || SHOW PAGE FONT AWESOME ICONS CUSTOM STYLING */
+
+.icon {
+	font-size: 20px !important;
+	margin-right: 8px;
+}

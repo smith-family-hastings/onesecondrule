@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_09_18_024208) do
+ActiveRecord::Schema[7.0].define(version: 2024_09_20_103828) do
   create_table "categories", force: :cascade do |t|
     t.string "category_name"
     t.datetime "created_at", null: false
@@ -26,7 +26,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_18_024208) do
     t.string "artist"
     t.string "song_album_title"
     t.text "description"
-    t.string "subscription"
     t.string "price"
     t.string "perks"
     t.string "image"
@@ -34,6 +33,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_09_18_024208) do
     t.datetime "updated_at", null: false
     t.string "category"
     t.integer "category_id"
+    t.string "social_media"
   end
 
 end

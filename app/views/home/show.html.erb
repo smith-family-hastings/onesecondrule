@@ -28,15 +28,19 @@
                         </tr>
                         <tr>
                           <th scope="row">Artist</th>
-                          <td><%= creator.artist  %></td>
+                          <td><a><%= creator.artist  %></a></td>
                         </tr>
                         <tr>
                           <th scope="row">Perks</th>
                           <td><%= creator.perks  %></td>
                         </tr>
                         <tr>
-                          <th scope="row">Subscription</th>
-                          <td><p><%= creator.subscription %></p></td>
+                          <th scope="row">Reach</th>
+                          <td><p><%#= creator.social_media %></p>
+                              <i class="fa fa-facebook-square icon" aria-hidden="true"></i>
+                              <i class="fa fa-instagram icon" aria-hidden="true"></i>
+                              <i class="fa fa-youtube-play icon" aria-hidden="true"></i>
+                          </td>
                         </tr>
                         <tr>
                           <th scope="row">Price</th>
@@ -45,7 +49,7 @@
                         <tr>
                         <tr>
                           <th scope="row"><br>
-                            <button class="btn btn-gumroad btn-block">Subscribe</button>
+                            <button class="btn btn-gumroad btn-block">Add to cart</button>
                           </th>
                           <td></td>
                         </tr>

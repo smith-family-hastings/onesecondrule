@@ -67,6 +67,6 @@ class CreatorsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def creator_params
-      params.require(:creator).permit(:artist, :song_album_title, :description, :subscription, :price, :perks, :image_uploader)
+      params.require(:creator).permit(:artist, :song_album_title, :description, :social_media, :price, :perks, :image_uploader)
     end
 end
