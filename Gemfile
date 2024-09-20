@@ -15,13 +15,13 @@ gem 'sass-rails'
 
 gem 'jquery-rails'
 
-gem 'carrierwave'
+# gem 'carrierwave'
 
-gem 'mini_magick'
+# gem 'mini_magick'
 
-gem 'aws-sdk-s3'
+# gem 'aws-sdk-s3'
 
-gem 'fog-aws'
+# gem 'fog-aws'
 
 gem "puma", "~> 5.0"
 
