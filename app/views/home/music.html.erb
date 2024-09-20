@@ -1,0 +1,139 @@
+<% @creators.each do |creator| %>
+  <% content_for :title do %>
+    Recorded Music | Gumroad
+  <% end %>
+
+  <%= render "layouts/navbar-inner" %>
+
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+              <br>
+              <hr>
+              <h3><strong>Recorded Music</strong></h3>
+              <h4 class="text-muted">Categories</h4>
+              <div class="tab-content">
+                <div id="home" class="tab-pane fade in active">
+                  <br>
+                  <br>
+                  <%# @music_categories.each do |category| %>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              All Music
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              <%#= category.category %>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              Pop
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              Electronic
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              Country
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              R & B
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              Jazz
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              Classical
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              Blues
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              Hip Hop
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              Heavy Metal
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="text-center">
+                              Alternative Rock
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               <%# end %>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="row">
+                  <div class="col-md-8">
+                    <div id="custom-search-input">
+                      <div class="input-group col-md-12">
+                        <input type="text" class="form-control input-lg" placeholder="Type anything here" />
+                        <span class="input-group-btn">
+                          <button class="btn btn-gumroad btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                          </button>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+<% end %>
+<br>
+<br>
+<br>

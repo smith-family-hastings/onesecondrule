@@ -1,0 +1,157 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap');
+
+.special {
+	font-size: 42px;
+}
+
+/* || RECORDED MUSIC NAV PILLS STYLING */
+
+.nav-pills .nav-link {
+	color: #000 !important;
+	font-weight: 400;
+}
+
+.nav-pills .nav-link:hover {
+	color: #fff !important;
+	background-color: #ff90e7 !important;
+}
+
+.nav-pills .nav-link:active {
+	background-color: #ff90e7 !important;
+}
+
+.nav-pills > .active > a, .nav-pills > .active > a:hover {
+	color: #fff !important;
+    background-color: #ff90e7 !important;
+    font-weight: 500;
+}
+
+/* || CUSTOM GUMROAD COLOR BUTTONS STYLING */
+
+.btn-gumroad {
+	background-color: #ff90e7 !important;
+	color: #fff !important;
+	padding: 10px 20px !important;
+	border: 1px solid #ff90e7 !important;
+	border-radius: 2px !important;
+	font-size: 15px !important;
+	font-weight: 500!important;
+	letter-spacing: 1px !important;
+}
+
+.btn-outline-gumroad {
+	background-color: #fff !important;
+	color: #ff90e7 !important;
+	padding: 10px 20px !important;
+	border: 1px solid #ff90e7 !important;
+	border-radius: 2px !important;
+	font-size: 15px !important;
+	font-weight: 500!important;
+	letter-spacing: 1px !important;
+}
+
+/* || PANEL STYLING */
+
+.panel {
+	font-weight: 400;
+	border-radius: 2px;
+	border: 1px solid #f5f5f5 !important;
+}
+
+.panel:hover {
+	color: #fff;
+	background-color: #ff90e7;
+	font-weight: 500;
+	border: 1px solid #ff90e7 !important;
+}
+
+/* || RECORDED MUSIC SEARCH BOX STYLING */
+
+#custom-search-input{
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+
+/* || FEATURES STYLING */
+
+.feature {
+	padding-right: 20px;
+}
+
+.accordionTitle {
+	cursor: pointer;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.accordionTitle + .accordionContent {
+	display: none;
+}
+
+.accordionTitle.is-open + .accordionContent {
+	display: block;
+}
+
+.row-fluid {
+	display: flex;
+	align-items: flex-end;
+}
+
+/* || FOOTER STYLING */
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+    height: 75px; /* .push must be the same height as .footer */
+}

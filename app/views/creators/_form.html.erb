@@ -1,0 +1,57 @@
+<%= form_with(model: creator) do |form| %>
+  <% if creator.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(creator.errors.count, "error") %> prohibited this creator from being saved:</h2>
+
+      <ul>
+        <% creator.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :artist, style: "display: block" %>
+    <%= form.text_field :artist %>
+  </div>
+
+  <div>
+    <%= form.label :song_album_title, style: "display: block" %>
+    <%= form.text_field :song_album_title %>
+  </div>
+
+    <div>
+    <%= form.label :category, style: "display: block" %>
+    <%= form.select :creator, collection: Creator::MUSIC_CATEGORIES, prompt: "Select a music category" %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :subscription, style: "display: block" %>
+    <%= form.select :role, Creator.roles.map { |key, value| [key.humanize, key] }, { prompt: true }, required: true %>
+  </div>
+
+  <div>
+    <%= form.label :price, style: "display: block" %>
+    <%= form.text_field :price %>
+  </div>
+
+  <div>
+    <%= form.label :perks, style: "display: block" %>
+    <%= form.text_field :perks %>
+  </div>
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.file_field :image, label: false, input_html: { class: "file-input", type: "file" }, wrapper: false, label_html: { class: "file-label" } %>
+  </div>
+  <br>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

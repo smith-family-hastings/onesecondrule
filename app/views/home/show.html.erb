@@ -1,0 +1,78 @@
+<% content_for :title do %>
+  Gumroad
+<% end %>
+
+<%= render "layouts/navbar-inner" %>
+<% @creators.each do |creator| %>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <br>
+            <hr>
+            <h3><strong><%= creator.song_album_title %></strong></h3>
+            <p>
+              <%= creator.description %>
+            </p>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                  <img src="/assets/singer.jpg" height="240" width="240" alt="Artist"/>
+                </div>
+                <div class="col-md-6">
+                    <table class="table borderless">
+                      <tbody>
+                        <tr>
+                          <th scope="row">Category</th>
+                          <td><%= creator.category %></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Artist</th>
+                          <td><%= creator.artist  %></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Perks</th>
+                          <td><%= creator.perks  %></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Subscription</th>
+                          <td><p><%= creator.subscription %></p></td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Price</th>
+                          <td><%= creator.price %></td>
+                        </tr>
+                        <tr>
+                        <tr>
+                          <th scope="row"><br>
+                            <button class="btn btn-gumroad btn-block">Subscribe</button>
+                          </th>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <br>
+                    <div class="row">
+                      <div class="col-xs-12">
+                          <i class="fa fa-thumbs-o-down fa-2x feature" aria-hidden="true" data-toggle="tooltip" title="Spit" style="margin:10px;"></i>
+                          <i class="fa fa-hand-peace-o fa-2x feature" aria-hidden="true" data-toggle="tooltip" title="Chew" style="margin:10px;"></i>
+                          <i class="fa fa-thumbs-o-up fa-2x" aria-hidden="true" data-toggle="tooltip" title="Swallow" style="margin:10px;"></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+<% end %>
+<br>
+<br>
+<br>
+
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>

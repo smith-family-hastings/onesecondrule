@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<div class="container">
+
+	<%= render @creator %>
+
+	<div>
+	  <%= link_to "Edit this creator", edit_creator_path(@creator) %> |
+	  <%= link_to "Back to creators", creators_path %>
+
+	  <%= button_to "Destroy this creator", @creator, method: :delete %>
+	</div>
+
+</div>
