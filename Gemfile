@@ -45,7 +45,7 @@ end
 
 group :development do
   gem "web-console"
-  gem 'sqlite3'
+  # gem 'sqlite3'
 end
 
 group :test do
