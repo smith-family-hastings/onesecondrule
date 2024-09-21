@@ -15,6 +15,8 @@ gem 'sass-rails'
 
 gem 'jquery-rails'
 
+gem 'sqlite3'
+
 # gem 'carrierwave'
 
 # gem 'mini_magick'
